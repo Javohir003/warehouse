@@ -22,7 +22,7 @@ export default function NavbarLayout() {
     { href: "/about", label: "Biz Haqimizda" },
     { href: "/services", label: "Xizmatlar" },
     { href: "/news", label: "Yangiliklar" },
-    { href: "/faq", label: "FAQ" },
+    { href: "/project", label: "Loyihalar" },
     { href: "/contact", label: "Bog'lanish" }
   ];
 
