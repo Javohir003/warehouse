@@ -1,10 +1,44 @@
-import NavbarLayout from "@/components/Navbar/NavbarLayout";
+import { ArrowRight, BarChart3, Package, Shield, Zap } from "lucide-react";
+import Link from "next/link";
+import AfzalliklarPage from "./_components/Advantages";
+import XizmatlarPage from "./_components/Xizmatlar";
+import ClientLogos from "./_components/ClientPage";
 
 export default function Home() {
   return (
     <div>
-      <NavbarLayout/>
-      
+      <div
+        className="relative pt-[170px] h-[100vh] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center"
+        style={{
+          backgroundImage: `url('/imgs/HomeBG.avif')`, // rasm `public/imgs/` ichida bo'lishi kerak
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/50 z-0" />
+
+        {/* Content */}
+        <div className="relative z-10 container">
+          <article className="text-center text-white mt-[-100px]">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              Professional ombor inventarizatsiyasi boshqaruvi
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-blue-100">
+              Ilg'or inventarizatsiya boshqaruv yechimlari bilan ombor operatsiyalaringizni optimallashtiring
+            </p>
+            <Link
+              href={`/contact`}
+              className="inline-flex items-center bg-white text-orange-500 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+            >
+              Boshlash
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </article>
+        </div>
+      </div>
+      <div>
+      <XizmatlarPage/>
+      <ClientLogos/>
+      </div>
     </div>
   );
 }
