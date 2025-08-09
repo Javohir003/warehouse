@@ -54,7 +54,7 @@ export default function FooterPage() {
                 <MapPin className="w-4 h-4 text-blue-400 mt-0.5" />
                 <p className="text-sm text-gray-300">
                   Toshkent sh., Yunusobod tumani,<br />
-                  Amir Temur ko'chasi 108
+                  Amir Temur ko&apos;chasi 108
                 </p>
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function FooterPage() {
 
           {/* Newsletter & Social */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Bog'lanish</h4>
+            <h4 className="text-lg font-semibold mb-6">Bog&apos;lanish</h4>
             {/* Social Media */}
             <div>
               <p className="text-gray-400 text-sm mb-4">Ijtimoiy tarmoqlarda kuzating</p>
