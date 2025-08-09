@@ -1,4 +1,5 @@
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
+import Link from 'next/link';
 
 export default function ContactPage() {
   return (
@@ -29,17 +30,20 @@ export default function ContactPage() {
               <Phone className="h-6 w-6 text-green-600 mr-3 sm:mr-4 mt-1 flex-shrink-0" />
               <div>
                 <h3 className="text-base sm:text-lg font-semibold text-gray-900">Telefon</h3>
-                <p className="text-gray-600 text-sm sm:text-base">+998 (71) 123-45-67</p>
-                <p className="text-gray-600 text-sm sm:text-base">+998 (90) 123-45-67</p>
+                <Link href="tel:+998711234567" className="text-green-600 hover:underline">
+                  +998 (71) 123-45-67
+                </Link>
               </div>
             </div>
 
             <div className="flex items-start w-full max-w-xs">
               <Mail className="h-6 w-6 text-green-600 mr-3 sm:mr-4 mt-1 flex-shrink-0" />
               <div>
+                
                 <h3 className="text-base sm:text-lg font-semibold text-gray-900">Email</h3>
-                <p className="text-gray-600 text-sm sm:text-base">info@audit-sklad.uz</p>
-                <p className="text-gray-600 text-sm sm:text-base">support@audit-sklad.uz</p>
+                <Link href="emailto:info@audit-sklad.uz" className="text-green-600 hover:underline">
+                  info@audit-sklad.uz
+                </Link>
               </div>
             </div>
 
@@ -47,21 +51,9 @@ export default function ContactPage() {
               <MapPin className="h-6 w-6 text-green-600 mr-3 sm:mr-4 mt-1 flex-shrink-0" />
               <div>
                 <h3 className="text-base sm:text-lg font-semibold text-gray-900">Manzil</h3>
-                <p className="text-gray-600 text-sm sm:text-base">
-                  Toshkent shahar, Yunusobod tumani,
-                  <br />
-                  Amir Temur shox ko&apos;chasi, 108-uy
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start w-full max-w-xs">
-              <Clock className="h-6 w-6 text-green-600 mr-3 sm:mr-4 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="text-base sm:text-lg font-semibold text-gray-900">Ish vaqti</h3>
-                <p className="text-gray-600 text-sm sm:text-base">Dushanba - Juma: 9:00 - 18:00</p>
-                <p className="text-gray-600 text-sm sm:text-base">Shanba: 9:00 - 14:00</p>
-                <p className="text-gray-600 text-sm sm:text-base">Yakshanba: Dam olish</p>
+                <Link href="https://www.google.com/maps/place/Amir+Temur+Avenue,+Tashkent,+Uzbekistan" className="text-green-600 hover:underline">
+                  Manzilimizni xaritada ko&apos;ring
+                </Link>
               </div>
             </div>
           </div>

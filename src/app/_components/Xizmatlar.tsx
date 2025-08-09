@@ -1,5 +1,6 @@
 import { Package, BarChart3, Settings, Zap, ArrowRight, CheckCircle, TrendingUp, Shield, Clock } from 'lucide-react'
 import { Card, CardContent } from "@/components/ui/card"
+import Link from "next/link"
 
 export default function XizmatlarPage() {
   const services = [
@@ -200,12 +201,12 @@ export default function XizmatlarPage() {
                           ))}
                         </ul>
                       </div>
-
-                      {/* CTA Button */}
+                      <Link href="/services">
                       <button className={`w-full bg-gradient-to-r ${colorClasses.gradient} text-white px-4 py-2 rounded-lg font-medium hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 group text-sm`}>
                         Batafsil
                         <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-300" />
                       </button>
+                      </Link>
                     </div>
                   </div>
                 </CardContent>
@@ -260,13 +261,17 @@ export default function XizmatlarPage() {
               Bepul konsultatsiya olish va sizning ehtiyojlaringizga mos yechimni tanlash uchun biz bilan bog&apos;laning
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300 flex items-center justify-center gap-2">
-                Bepul konsultatsiya
-                <ArrowRight className="w-4 h-4" />
-              </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-300">
-                Barcha xizmatlar
-              </button>
+              <Link href="/contact">
+                <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300 flex items-center justify-center gap-2">
+                  Bepul konsultatsiya
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              </Link>
+              <Link href="/services">
+                <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-300">
+                  Barcha xizmatlar
+                </button>
+              </Link>
             </div>
           </div>
         </div>

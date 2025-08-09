@@ -2,17 +2,17 @@ import { Phone, Mail, MapPin, Instagram, Youtube } from 'lucide-react'
 
 export default function FooterPage() {
   const navigationLinks = [
-    { name: "Biz haqimizda", href: "#about" },
-    { name: "Xizmatlar", href: "#services" },
-    { name: "Yangiliklar", href: "#news" },
-    { name: "Bog'lanish", href: "#contact" }
+    { name: "Biz haqimizda", href: "/about" },
+    { name: "Xizmatlar", href: "/services" },
+    { name: "Yangiliklar", href: "/news" },
+    { name: "Bog'lanish", href: "/contact" }
   ]
 
   const services = [
-    { name: "Inventarizatsiya boshqaruvi", href: "#inventory" },
-    { name: "Tahlil va hisobot", href: "#analytics" },
-    { name: "Ombor optimallashtirish", href: "#optimization" },
-    { name: "Avtomatlashtirilgan tizimlar", href: "#automation" }
+    { name: "Inventarizatsiya boshqaruvi", href: "https://t.me/makhmudovmee" },
+    { name: "Tahlil va hisobot", href: "https://t.me/makhmudovmee" },
+    { name: "Ombor optimallashtirish", href: "https://t.me/makhmudovmee" },
+    { name: "Avtomatlashtirilgan tizimlar", href: "https://t.me/makhmudovmee" }
   ]
 
   return (
@@ -109,15 +109,6 @@ export default function FooterPage() {
                   aria-label="Instagram"
                 >
                   <Instagram className="w-5 h-5 text-gray-400 group-hover:text-white" />
-                </a>
-                <a 
-                  href="#" 
-                  className="w-10 h-10 bg-gray-800 hover:bg-blue-500 rounded-lg flex items-center justify-center transition-all duration-300 group"
-                  aria-label="Telegram"
-                >
-                  <svg className="w-5 h-5 text-gray-400 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm5.568 8.16c-.169 1.858-.896 6.728-.896 6.728-.302 1.507-1.123 1.507-1.123 1.507s-.302 0-.604-.302L12.5 14.5l-1.813 1.507s-.302.302-.604.302-.604-.302-.604-.302L8.5 14.5l-2.445 1.593s-.302.302-.604 0-.302-.604-.302-.604.169-1.507.896-6.728c.302-1.507 1.123-1.507 1.123-1.507s.302 0 .604.302L12 9.5l4.228-1.944s.302-.302.604-.302.604.302.604.302.169 1.507-.868 6.728z"/>
-                  </svg>
                 </a>
                 <a 
                   href="#" 
