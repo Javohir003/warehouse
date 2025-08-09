@@ -141,7 +141,7 @@ export default function XizmatlarPage() {
             <span className="text-blue-600">xizmatlarimiz</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Biznesingizni rivojlantirish uchun to'liq yechimlar to'plami. Har bir xizmat sizning ehtiyojlaringizga moslashtirilgan.
+            Biznesingizni rivojlantirish uchun to&apos;liq yechimlar to&apos;plami. Har bir xizmat sizning ehtiyojlaringizga moslashtirilgan.
           </p>
         </div>
 
@@ -221,7 +221,7 @@ export default function XizmatlarPage() {
               Nega bizning xizmatlarimizni tanlashingiz kerak?
             </h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Bizning xizmatlarimiz sizning biznesingizni yangi darajaga olib chiqish uchun mo'ljallangan
+              Bizning xizmatlarimiz sizning biznesingizni yangi darajaga olib chiqish uchun mo&apos;ljallangan
             </p>
           </div>
 
@@ -237,7 +237,7 @@ export default function XizmatlarPage() {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-green-600" />
               </div>
-              <h4 className="text-xl font-bold text-gray-900 mb-2">24/7 Qo'llab-quvvatlash</h4>
+              <h4 className="text-xl font-bold text-gray-900 mb-2">24/7 Qo&apos;llab-quvvatlash</h4>
               <p className="text-gray-600">Har doim sizning xizmatlaringizda</p>
             </div>
             <div className="text-center">
@@ -254,10 +254,10 @@ export default function XizmatlarPage() {
         <div className="text-center">
           <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-2xl p-8 md:p-12">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Bizning xizmatlarimizni sinab ko'ring!
+              Bizning xizmatlarimizni sinab ko&apos;ring!
             </h3>
             <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
-              Bepul konsultatsiya olish va sizning ehtiyojlaringizga mos yechimni tanlash uchun biz bilan bog'laning
+              Bepul konsultatsiya olish va sizning ehtiyojlaringizga mos yechimni tanlash uchun biz bilan bog&apos;laning
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300 flex items-center justify-center gap-2">

@@ -1,4 +1,4 @@
-import { UserPlus, Building2, Package, ClipboardList, BarChart3, ArrowRight, CheckCircle, Clock, Users } from 'lucide-react'
+import { UserPlus, Building2, Package, ClipboardList, BarChart3, ArrowRight, CheckCircle, Clock } from 'lucide-react'
 import { Card, CardContent } from "@/components/ui/card"
 
 export default function Component() {
@@ -178,26 +178,26 @@ export default function Component() {
                 Nega aynan bizning yechimimiz?
               </h3>
               <p className="text-blue-100 mb-6">
-                Oddiy 4 qadamda biznesingizni to'liq avtomatlashtiring va samaradorlikni oshiring
+                Oddiy 4 qadamda biznesingizni to&apos;liq avtomatlashtiring va samaradorlikni oshiring
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300 flex items-center gap-2">
-                  Boshlab ko'ring
+                  Boshlab ko&apos;ring
                   <ArrowRight className="w-4 h-4" />
                 </button>
                 <button className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-300">
-                  Demo ko'rish
+                  Demo ko&apos;rish
                 </button>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-bold mb-2">15 min</div>
-                <div className="text-blue-100">O'rnatish vaqti</div>
+                <div className="text-blue-100">O&apos;rnatish vaqti</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold mb-2">24/7</div>
-                <div className="text-blue-100">Qo'llab-quvvatlash</div>
+                <div className="text-blue-100">Qo&apos;llab-quvvatlash</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold mb-2">99.9%</div>
@@ -217,14 +217,14 @@ export default function Component() {
             Savollaringiz bormi?
           </h3>
           <p className="text-gray-600 mb-8">
-            Eng ko'p beriladigan savollar bo'limiga qarang yoki to'g'ridan-to'g'ri biz bilan bog'laning
+            Eng ko&apos;p beriladigan savollar bo&apos;limiga qarang yoki to&apos;g&apos;ridan-to&apos;g&apos;ri biz bilan bog&apos;laning
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300">
-              FAQ ko'rish
+              FAQ ko&apos;rish
             </button>
             <button className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors duration-300">
-              Bog'lanish
+              Bog&apos;lanish
             </button>
           </div>
         </div>

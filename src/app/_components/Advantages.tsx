@@ -91,7 +91,7 @@ export default function AfzalliklarPage() {
                         </div>
                         <div className="text-center">
                             <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">24/7</div>
-                            <div className="text-gray-600 font-medium">Qo'llab-quvvatlash</div>
+                            <div className="text-gray-600 font-medium">Qo&apos;llab-quvvatlash</div>
                         </div>
                         <div className="text-center">
                             <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2">500+</div>
