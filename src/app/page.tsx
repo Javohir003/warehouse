@@ -1,6 +1,5 @@
-import { ArrowRight, BarChart3, Package, Shield, Zap } from "lucide-react";
+import { ArrowRight} from "lucide-react";
 import Link from "next/link";
-import AfzalliklarPage from "./_components/Advantages";
 import XizmatlarPage from "./_components/Xizmatlar";
 import ClientLogos from "./_components/ClientPage";
 
@@ -23,7 +22,7 @@ export default function Home() {
               Professional ombor inventarizatsiyasi boshqaruvi
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100">
-              Ilg'or inventarizatsiya boshqaruv yechimlari bilan ombor operatsiyalaringizni optimallashtiring
+              Ilg&apos;or inventarizatsiya boshqaruv yechimlari bilan ombor operatsiyalaringizni optimallashtiring
             </p>
             <Link
               href={`/contact`}
