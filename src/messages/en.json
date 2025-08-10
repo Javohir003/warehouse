@@ -1,0 +1,163 @@
+{
+  "Navbar": {
+    "about": "About Us",
+    "contact": "Contact Us",
+    "news": "News",
+    "services": "Services",
+    "project": "Project"
+  },
+  "home": {
+    "hero": {
+      "title": "Professional Warehouse Inventory Management",
+      "subtitle": "Optimize your warehouse operations with advanced inventory management solutions",
+      "startButton": "Get Started"
+    }
+  },
+    "servicesPage": {
+      "badge": "Our services",
+      "title2":"our services",
+      "title": "Our",
+      "description": "A complete set of solutions to grow your business. Each service is tailored to your needs.",
+    "services": [
+      {
+        "icon": "Package",
+        "title": "Inventory Management",
+        "description": "Comprehensive inventory tracking and management solutions",
+        "featuresTitle": "Features:",
+        "features": [
+          "Real-time inventory tracking",
+          "Automated low stock alerts",
+          "Product movement history tracking",
+          "Barcode and QR code support",
+          "Multi-warehouse support"
+        ],
+        "benefitsTitle": "Benefits:",
+        "benefits": [
+          "Reduce stock losses by up to 90%",
+          "Automate the ordering process",
+          "Control product quality"
+        ],
+        "color": "blue",
+        "popular": false
+      },
+      {
+        "icon": "BarChart3",
+        "title": "Analysis and Reporting",
+        "description": "Detailed analysis and reporting for informed decision-making",
+        "featuresTitle": "Features:",
+        "features": [
+          "Real-time dashboard",
+          "Financial reports",
+          "Sales trend analysis",
+          "ABC analysis and categorization",
+          "Export in Excel/PDF format"
+        ],
+        "benefitsTitle": "Benefits:",
+        "benefits": [
+          "Data-driven decision making",
+          "Increase business efficiency",
+          "Optimize costs"
+        ],
+        "color": "green",
+        "popular": true
+      },
+      {
+        "icon": "Settings",
+        "title": "Warehouse Optimization",
+        "description": "Optimize the layout and operations of your warehouse",
+        "featuresTitle": "Features:",
+        "features": [
+          "Warehouse layout planning",
+          "Product placement strategy",
+          "Labor efficiency analysis",
+          "Logistics route optimization",
+          "Cost reduction proposals"
+        ],
+        "benefitsTitle": "Benefits:",
+        "benefits": [
+          "Increase warehouse efficiency by 40%",
+          "Reduce operational costs",
+          "Improve customer service"
+        ],
+        "color": "purple",
+        "popular": false
+      },
+      {
+        "icon": "Zap",
+        "title": "Automated Systems",
+        "description": "Automated systems for efficient warehouse operations",
+        "featuresTitle": "Features:",
+        "features": [
+          "Automated order placement",
+          "Smart notification system",
+          "Integration with other systems",
+          "Mobile app support",
+          "Cloud-based solutions"
+        ],
+        "benefitsTitle": "Benefits:",
+        "benefits": [
+          "Reduce manual labor by 80%",
+          "Minimize errors",
+          "24/7 automated monitoring"
+        ],
+        "color": "orange",
+        "popular": false
+      }
+    ],
+      "title3": "Why you should choose our services?",
+      "description2": "Our services are designed to take your business to the next level",
+          "title4": "Reliable",
+          "description3": "99.9% reliability and security guarantee",
+          "title5": "24/7 Support",
+          "description4": "Always at your service",
+          "title6": "Efficiency",
+          "description5": "Accelerate business processes by 5x",
+      "title7": "Try our services!",
+      "description6": "Contact us to get a free consultation and choose a solution that fits your needs",
+      "freeConsultation": "Free Consultation",
+      "allServices": "All Services",
+      "details": "Details",
+      "popular": "Popular",
+      "title12": "Companies that trust us"
+  },
+"footer": {
+    "company": {
+      "name": "Warehouse Systems",
+      "tagline": "Consulting",
+      "description": "Modern warehouse management solutions and professional consulting services to grow your business."
+    },
+    "contact": {
+      "phone": "+998 (90) 123-45-67",
+      "email": "info@warehousesystems.uz",
+      "address": "Tashkent city, Yunusabad district,\nAmir Temur street 108"
+    },
+    "nav": {
+      "title": "Pages",
+      "link1": { "name": "About Us", "href": "/about" },
+      "link2": { "name": "Services", "href": "/services" },
+      "link3": { "name": "News", "href": "/news" },
+      "link4": { "name": "Contact", "href": "/contact" }
+    },
+    "services": {
+      "title": "Services",
+      "link1": { "name": "Inventory Management", "href": "https://t.me/makhmudovmee" },
+      "link2": { "name": "Analysis and Reports", "href": "https://t.me/makhmudovmee" },
+      "link3": { "name": "Warehouse Optimization", "href": "https://t.me/makhmudovmee" },
+      "link4": { "name": "Automated Systems", "href": "https://t.me/makhmudovmee" }
+    },
+    "connect": {
+      "title": "Connect",
+      "follow": "Follow us on social media",
+      "social": {
+        "instagram": "Instagram",
+        "youtube": "YouTube"
+      }
+    },
+    "bottom": {
+      "copyright": "© 2025 Warehouse Systems Consulting. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "cookies": "Cookie Policy"
+    }
+  }
+}

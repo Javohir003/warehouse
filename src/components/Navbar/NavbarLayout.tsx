@@ -3,8 +3,11 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { RiInstagramFill } from "react-icons/ri";
 import { Menu, X } from 'lucide-react';
+import { usePathname, useRouter } from 'next/navigation'
+import { useLocale, useTranslations } from 'next-intl'
 
 
 import uz from "../../../public/icons/uz.svg";
@@ -13,18 +16,33 @@ import en from "../../../public/icons/eng.svg";
 
 export default function NavbarLayout() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname()
+  const router = useRouter()
+  const currentLocale = useLocale()
+
+  const t = useTranslations("Navbar")
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const navigationLinks = [
-    { href: "/about", label: "Biz Haqimizda" },
-    { href: "/services", label: "Xizmatlar" },
-    { href: "/news", label: "Yangiliklar" },
-    { href: "/project", label: "Loyihalar" },
-    { href: "/contact", label: "Bog'lanish" }
+    { href: "/about", label: t('about') },
+    { href: "/services", label: t('services') },
+    { href: "/news", label: t('news') },
+    { href: "/project", label: t('project') },
+    { href: "/contact", label: t('contact') }
   ];
+
+  const changeLocale = (locale: string) => {
+    if (locale === currentLocale) return
+
+    const segments = pathname.split('/')
+    segments[1] = locale
+    const newPath = segments.join('/')
+
+    router.push(newPath)
+  }
 
   const languages = [
     { code: "uz", label: "UZ", icon: uz },
@@ -38,20 +56,28 @@ export default function NavbarLayout() {
         {/* Top Header - Hidden on mobile */}
         <header className="hidden sm:flex items-center justify-between py-2 border-b">
           <RiInstagramFill className="text-[25px] text-gray-600 hover:text-pink-500 transition-colors duration-300 cursor-pointer" />
-          <ul className="flex gap-4">
-            {languages.map((lang) => (
-              <li key={lang.code} className="flex items-center gap-1 cursor-pointer hover:text-blue-600 transition-colors duration-300">
-                <Image width={20} height={20} src={lang.icon || "/placeholder.svg"} alt={`${lang.label} logo`} />
-                <span className="text-sm font-medium">{lang.label}</span>
-              </li>
-            ))}
-          </ul>
+          <Select value={currentLocale} onValueChange={changeLocale}>
+            <SelectTrigger className="w-[140px] bg-gradient-to-r from-white-500 to-white-600 text-gray font-medium rounded-xl border-none shadow-md cursor-pointer transition-all duration-300 focus:ring-2 focus:ring-gray-400">
+              <SelectValue placeholder="Select language" />
+            </SelectTrigger>
+            <SelectContent>
+              {languages.map((locale) => (
+                <SelectItem
+                  key={locale.code}
+                  value={locale.code}
+                  className="cursor-pointer focus:bg-cyan-500"
+                >
+                  {locale.label}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </header>
 
         {/* Main Navigation */}
         <nav className="flex items-center justify-between py-3">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
+          <Link href={`/${currentLocale}`} className="flex items-center gap-3">
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <div className="w-4 h-4 bg-white rounded-sm"></div>
             </div>
@@ -65,9 +91,9 @@ export default function NavbarLayout() {
           <ul className="hidden lg:flex items-center gap-10">
             {navigationLinks.map((link) => (
               <li key={link.href}>
-                <Link 
-                  href={link.href}
-                  className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
+                <Link
+                  href={`/${currentLocale}${link.href}`}
+                  className={`text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium ${pathname === `/${currentLocale}${link.href}` ? 'font-bold' : ''}`}
                 >
                   {link.label}
                 </Link>
@@ -90,18 +116,17 @@ export default function NavbarLayout() {
         </nav>
 
         {/* Mobile Menu */}
-        <div className={`lg:hidden transition-all duration-300 ease-in-out ${
-          isMobileMenuOpen 
-            ? 'max-h-96 opacity-100 pb-4' 
-            : 'max-h-0 opacity-0 overflow-hidden'
-        }`}>
+        <div className={`lg:hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen
+          ? 'max-h-96 opacity-100 pb-4'
+          : 'max-h-0 opacity-0 overflow-hidden'
+          }`}>
           <div className=" pt-4">
             {/* Mobile Navigation Links */}
             <ul className="space-y-3 mb-4">
               {navigationLinks.map((link) => (
                 <li key={link.href}>
-                  <Link 
-                    href={link.href}
+                  <Link
+                    href={`/${currentLocale}${link.href}`}
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="block py-2 px-4 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium"
                   >
@@ -114,14 +139,22 @@ export default function NavbarLayout() {
             {/* Mobile Language Selector */}
             <div className="border-t border-gray-200 pt-4">
               <p className="text-sm text-gray-500 mb-3 px-4">Til tanlang:</p>
-              <ul className="flex gap-4 px-4">
-                {languages.map((lang) => (
-                  <li key={lang.code} className="flex items-center gap-1 cursor-pointer hover:text-blue-600 transition-colors duration-300">
-                    <Image width={16} height={16} src={lang.icon || "/placeholder.svg"} alt={`${lang.label} logo`} />
-                    <span className="text-sm font-medium">{lang.label}</span>
-                  </li>
-                ))}
-              </ul>
+              <Select value={currentLocale} onValueChange={changeLocale}>
+                <SelectTrigger className="w-[140px] bg-gradient-to-r from-white-500 to-white-600 text-gray font-medium rounded-xl border-none shadow-md cursor-pointer transition-all duration-300 focus:ring-2 focus:ring-gray-400">
+                  <SelectValue placeholder="Select language" />
+                </SelectTrigger>
+                <SelectContent>
+                  {languages.map((locale) => (
+                    <SelectItem
+                      key={locale.code}
+                      value={locale.code}
+                      className="cursor-pointer focus:bg-cyan-500"
+                    >
+                      {locale.label}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
             </div>
 
             {/* Mobile Social Media */}
@@ -136,7 +169,7 @@ export default function NavbarLayout() {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div 
+        <div
           className="lg:hidden fixed inset-0 bg-black bg-opacity-20 z-[-1]"
           onClick={() => setIsMobileMenuOpen(false)}
         />

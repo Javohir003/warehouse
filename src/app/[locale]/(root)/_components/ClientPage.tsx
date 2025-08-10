@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 const partners = [
   {
@@ -34,6 +35,7 @@ const partners = [
 ];
 
 export default function Partnyor() {
+  const t = useTranslations("servicesPage");
   const [isGradient, setIsGradient] = useState(true);
 
   useEffect(() => {
@@ -56,7 +58,7 @@ export default function Partnyor() {
     <div className="md:py-16 pt-6 mb-6 overflow-visible">
       <article className="container text-center mb-10 px-4 sm:px-0">
         <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-vk mb-2 text-[#3D445E]">
-          Bizga ishongan kompaniyalar
+          {t("title12")}
         </h3>
       </article>
 

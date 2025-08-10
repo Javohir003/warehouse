@@ -1,0 +1,175 @@
+{
+  "Navbar": {
+    "about": "Biz haqimizda",
+    "contact": "Bog'lanish",
+    "news": "Yangiliklar",
+    "services": "Xizmatlar",
+    "project": "Loyihalar"
+  },
+  "home": {
+    "hero": {
+      "title": "Professional ombor inventarizatsiyasi boshqaruvi",
+      "subtitle": "Ilg'or inventarizatsiya boshqaruv yechimlari bilan ombor operatsiyalaringizni optimallashtiring",
+      "startButton": "Boshlash"
+    }
+  },
+  "servicesPage": {
+    "badge": "Xizmatlarimiz",
+    "title2": "xizmatlarimiz",
+    "title": "Bizning",
+    "description": "Biznesingizni rivojlantirish uchun to'liq yechimlar to'plami. Har bir xizmat sizning ehtiyojlaringizga moslashtirilgan.",
+    "services": [
+      {
+        "icon": "Package",
+        "title": "Inventarizatsiya boshqaruvi",
+        "description": "To'liq inventarizatsiya kuzatuvi va boshqaruv yechimlari",
+        "featuresTitle": "Xususiyatlar:",
+        "features": [
+          "Real vaqtda zaxira kuzatuvi",
+          "Avtomatik kam zaxira ogohlantirishlari",
+          "Mahsulot harakati tarixini saqlash",
+          "Barcode va QR kod qo'llab-quvvatlash",
+          "Bir nechta ombor bilan ishlash"
+        ],
+        "benefitsTitle": "Afzalliklar:",
+        "benefits": [
+          "Zaxira yo'qotishlarini 90% gacha kamaytirish",
+          "Buyurtma berish jarayonini avtomatlashtirish",
+          "Mahsulot sifatini nazorat qilish"
+        ],
+        "color": "blue",
+        "popular": false
+      },
+      {
+        "icon": "BarChart3",
+        "title": "Tahlil va hisobot",
+        "description": "Yaxshi qaror qabul qilish uchun batafsil tahlil va hisobot",
+        "featuresTitle": "Xususiyatlar:",
+        "features": [
+          "Real vaqtda dashboard",
+          "Moliyaviy hisobotlar",
+          "Sotish tendentsiyalari tahlili",
+          "ABC tahlil va kategoriyalash",
+          "Excel/PDF formatda eksport"
+        ],
+        "benefitsTitle": "Afzalliklar:",
+        "benefits": [
+          "Ma'lumotlarga asoslangan qarorlar",
+          "Biznes samaradorligini oshirish",
+          "Xarajatlarni optimallashtirish"
+        ],
+        "color": "green",
+        "popular": true
+      },
+      {
+        "icon": "Settings",
+        "title": "Ombor optimallashtirish",
+        "description": "Omboringizning joylashuvi va operatsiyalarini optimallashtirishish",
+        "featuresTitle": "Xususiyatlar:",
+        "features": [
+          "Ombor joylashuvini rejalashtirish",
+          "Mahsulot joylashtirish strategiyasi",
+          "Ishchi kuchi samaradorligi tahlili",
+          "Logistika marshrut optimallashtirish",
+          "Xarajatlarni kamaytirish takliflari"
+        ],
+        "benefitsTitle": "Afzalliklar:",
+        "benefits": [
+          "Ombor samaradorligini 40% oshirish",
+          "Operatsion xarajatlarni kamaytirish",
+          "Mijozlar xizmatini yaxshilash"
+        ],
+        "color": "purple",
+        "popular": false
+      },
+      {
+        "icon": "Zap",
+        "title": "Avtomatlashtirilgan tizimlar",
+        "description": "Samarali ombor operatsiyalari uchun avtomatlashtirilgan tizimlar",
+        "featuresTitle": "Xususiyatlar:",
+        "features": [
+          "Avtomatik buyurtma berish",
+          "Smart ogohlantirishlar tizimi",
+          "Integratsiya boshqa tizimlar bilan",
+          "Mobil ilovalar qo'llab-quvvatlash",
+          "Cloud-based yechimlar"
+        ],
+        "benefitsTitle": "Afzalliklar:",
+        "benefits": [
+          "Qo'lda ish hajmini 80% kamaytirish",
+          "Xatolarni minimallashtirishish",
+          "24/7 avtomatik monitoring"
+        ],
+        "color": "orange",
+        "popular": false
+      }
+    ],
+    "title3": "Nega bizning xizmatlarimizni tanlashingiz kerak?",
+    "description2": "Bizning xizmatlarimiz sizning biznesingizni yangi darajaga olib chiqish uchun mo'ljallangan",
+    "title4": "Ishonchli",
+    "description3": "99.9% ishonchlilik va xavfsizlik kafolati",
+    "title5": "24/7 Qo'llab-quvvatlash",
+    "description4": "Har doim sizning xizmatlaringizda",
+    "title6": "Samaradorlik",
+    "description5": "Biznes jarayonlarini 5x tezlashtirish",
+    "title7": "Bizning xizmatlarimizni sinab ko'ring!",
+    "description6": "Bepul konsultatsiya olish va sizning ehtiyojlaringizga mos yechimni tanlash uchun biz bilan bog'laning",
+    "freeConsultation": "Bepul konsultatsiya",
+    "allServices": "Barcha xizmatlar",
+    "details": "Batafsil",
+    "popular": "Mashhur",
+    "title12": "Bizga ishongan kompaniyalar"
+  },
+  "footer": {
+    "company": {
+      "name": "Warehouse Systems",
+      "tagline": "Consulting",
+      "description": "Biznesingizni rivojlantirish uchun zamonaviy ombor boshqaruv yechimlari va professional konsalting xizmatlari."
+    },
+    "contact": {
+      "phone": "+998 (90) 123-45-67",
+      "email": "info@warehousesystems.uz",
+      "address": "Toshkent sh., Yunusobod tumani,\nAmir Temur ko'chasi 108"
+    },
+    "nav": {
+      "title": "Sahifalar",
+      "link1": { "name": "Biz haqimizda", "href": "/about" },
+      "link2": { "name": "Xizmatlar", "href": "/services" },
+      "link3": { "name": "Yangiliklar", "href": "/news" },
+      "link4": { "name": "Bog'lanish", "href": "/contact" }
+    },
+    "services": {
+      "title": "Xizmatlar",
+      "link1": {
+        "name": "Inventarizatsiya boshqaruvi",
+        "href": "https://t.me/makhmudovmee"
+      },
+      "link2": {
+        "name": "Tahlil va hisobot",
+        "href": "https://t.me/makhmudovmee"
+      },
+      "link3": {
+        "name": "Ombor optimallashtirish",
+        "href": "https://t.me/makhmudovmee"
+      },
+      "link4": {
+        "name": "Avtomatlashtirilgan tizimlar",
+        "href": "https://t.me/makhmudovmee"
+      }
+    },
+    "connect": {
+      "title": "Bog'lanish",
+      "follow": "Ijtimoiy tarmoqlarda kuzating",
+      "social": {
+        "instagram": "Instagram",
+        "youtube": "YouTube"
+      }
+    },
+    "bottom": {
+      "copyright": "© 2025 Warehouse Systems Consulting. Barcha huquqlar himoyalangan.",
+      "privacy": "Maxfiylik siyosati",
+      "terms": "Foydalanish shartlari",
+      "cookies": "Cookie siyosati"
+    }
+  }
+}
