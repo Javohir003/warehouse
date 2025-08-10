@@ -13,6 +13,15 @@
       "startButton": "Boshlash"
     }
   },
+    "contact": {
+    "heroTitle": "Biz bilan bog'lanish",
+    "heroSubtitle": "Har qanday savol va takliflaringiz uchun biz bilan bog'laning",
+    "contactInfo": "Aloqa ma'lumotlari",
+    "phone": "Telefon",
+    "email": "Email",
+    "address": "Manzil",
+    "viewOnMap": "Manzilimizni xaritada ko'ring"
+  },
   "servicesPage": {
     "badge": "Xizmatlarimiz",
     "title2": "xizmatlarimiz",
@@ -171,5 +180,190 @@
       "terms": "Foydalanish shartlari",
       "cookies": "Cookie siyosati"
     }
+  },
+  "about": {
+    "hero": {
+      "title": "Kompaniyamiz haqida",
+      "description": "Biz saqlash va logistika operatsiyalarini optimallashtirish bo'yicha ko'p yillik tajribaga ega yetakchi ombor inventarizatsiyasi boshqaruv kompaniyasimiz."
+    },
+    "missionVision": {
+      "mission": {
+        "title": "Bizning missiyamiz",
+        "text": "Korxonalarga ombor operatsiyalarini optimallashtirish va xarajatlarni kamaytirish uchun yordam beradigan innovatsion inventarizatsiya boshqaruv yechimlarini taqdim etish."
+      },
+      "vision": {
+        "title": "Bizning ko'z o'ngimiz",
+        "text": "Ombor inventarizatsiyasi boshqaruvi texnologiyalari va xizmatlari bo'yicha global lider bo'lish"
+      }
+    },
+    "stats": {
+      "customers": "Mijozlar",
+      "experience": "Yillik tajriba",
+      "projects": "Loyihalar",
+      "support": "Qo'llab-quvvatlash"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "Yangiliklar va maqolalar",
+      "description": "Ombor boshqaruvi, inventarizatsiya va logistika sohasidagi so'nggi yangiliklar"
+    },
+    "featuredTitle": "Asosiy yangiliklar",
+    "allTitle": "Barcha yangiliklar",
+    "readMore": "Batafsil o'qish",
+    "articles": [
+      {
+        "id": 1,
+        "title": "Ombor boshqaruvi yangilandi",
+        "excerpt": "Bizning yangi tizimimiz bilan samaradorlik oshdi.",
+        "content": "To‘liq maqola matni shu yerda bo‘ladi...",
+        "date": "2025-08-01",
+        "author": "Admin",
+        "category": "Texnologiya",
+        "readTime": "5 min",
+        "featured": true
+      },
+      {
+        "id": 2,
+        "title": "Ombor boshqaruvi yangilandi",
+        "excerpt": "Bizning yangi tizimimiz bilan samaradorlik oshdi.",
+        "content": "To‘liq maqola matni shu yerda bo‘ladi...",
+        "date": "2025-08-01",
+        "author": "Admin",
+        "category": "Texnologiya",
+        "readTime": "5 min",
+        "featured": true
+      },
+      {
+        "id": 3,
+        "title": "Ombor boshqaruvi yangilandi",
+        "excerpt": "Bizning yangi tizimimiz bilan samaradorlik oshdi.",
+        "content": "To‘liq maqola matni shu yerda bo‘ladi...",
+        "date": "2025-08-01",
+        "author": "Admin",
+        "category": "Texnologiya",
+        "readTime": "5 min",
+        "featured": false
+      },
+      {
+        "id": 4,
+        "title": "Yangi hamkorlik shartnomasi",
+        "excerpt": "Xalqaro kompaniya bilan shartnoma imzolandi.",
+        "content": "To‘liq maqola matni shu yerda bo‘ladi...",
+        "date": "2025-07-20",
+        "author": "Admin",
+        "category": "Biznes",
+        "readTime": "3 min",
+        "featured": false
+      }
+    ]
+  },
+  "portfolio": {
+    "hero": {
+      "title": "Bizning loyihalarimiz",
+      "subtitle": "Turli sohalarda muvaffaqiyatli bajarilgan inventarizatsiya va audit loyihalari"
+    },
+    "stats": {
+      "projects": "Muvaffaqiyatli loyihalar",
+      "warehouses": "Inventarizatsiya qilingan omborxonalar",
+      "items": "Hisoblangan tovarlar",
+      "accuracy": "O'rtacha aniqlik darajasi"
+    },
+    "recentProjects": {
+      "title": "So'nggi loyihalarimiz",
+      "subtitle": "Har bir loyiha bizning professional yondashuvimiz va yuqori sifatli xizmat ko'rsatish qobiliyatimizni aks ettiradi"
+    },
+    "projects": [
+      {
+        "title": "Yirik savdo kompaniyasi inventarizatsiyasi",
+        "client": "ABC Distribution",
+        "category": "Savdo",
+        "description": "15,000 m² omborxonada to'liq inventarizatsiya o'tkazish va jarayon optimallashtirish",
+        "results": ["99.8% aniqlik", "30% vaqt tejamkorligi", "Xarajatlar 25% kamaygan"]
+      },
+      {
+        "title": "Oziq-ovqat mahsulotlari auditi",
+        "client": "Food Market Chain",
+        "category": "Oziq-ovqat",
+        "description": "7 ta do'kon va omborxonalarida inventarizatsiya va xavfsizlik auditi",
+        "results": ["100% hisobot aniqligi", "HACCP standartlariga muvofiqlik", "Yo'qotishlar 40% kamaygan"]
+      },
+      {
+        "title": "Farmatsevtika kompaniyasi auditi",
+        "client": "PharmaCorp",
+        "category": "Farmatsevtika",
+        "description": "Dori vositalari omborini audit qilish va GMP standartlariga muvofiqlikni tekshirish",
+        "results": ["GMP sertifikati olish", "Yo'qotishlar 0.1% gacha kamaytirish", "Samaradorlik 50% oshirish"]
+      },
+      {
+        "title": "Tekstil korxonasi inventarizatsiyasi",
+        "client": "Textile Industries",
+        "category": "Tekstil",
+        "description": "10,000 m² omborxonada mato va tayyor mahsulotlar inventarizatsiyasi",
+        "results": ["95% aniqlik", "Jarayonlar 20% tezlashtirish", "Xarajatlar 15% tejash"]
+      },
+      {
+        "title": "Avtomobil ehtiyot qismlari auditi",
+        "client": "Auto Parts Ltd",
+        "category": "Avtomobil",
+        "description": "Avtomobil ehtiyot qismlari omborini to'liq auditi va kataloglashtirish",
+        "results": ["50,000+ mahsulot kataloglangan", "Qidiruv tizimi 70% yaxshilangan", "Yo'qotishlar 35% kamaygan"]
+      },
+      {
+        "title": "Elektronika do'koni inventarizatsiyasi",
+        "client": "Tech Store Network",
+        "category": "Elektronika",
+        "description": "12 ta elektronika do'konlarida inventarizatsiya va narxlash tizimini optimallashtirish",
+        "results": ["Real vaqt inventarizatsiya", "Narxlar 100% aniq", "Sotuvlar 25% oshgan"]
+      }
+    ]
+  },
+    "services": {
+    "hero": {
+      "title": "Bizning xizmatlarimiz",
+      "subtitle": "Professional ombor boshqaruvi yechimlari sizning biznesingiz ehtiyojlariga mos"
+    },
+    "list": [
+      {
+        "title": "Inventarizatsiya",
+        "description": "Mahsulotlaringiz zaxirasini real vaqt rejimida nazorat qilish va boshqarish tizimi.",
+        "features": [
+          "Real vaqtli zaxira monitoringi",
+          "Avtomatik zaxira tugash ogohlantirishlari",
+          "Shtrix-kod orqali skanerlash",
+          "Bir nechta filiallarni qo‘llab-quvvatlash"
+        ]
+      },
+      {
+        "title": "Tahlil",
+        "description": "Omborxona samaradorligini baholash uchun chuqur tahlillar va hisobotlar.",
+        "features": [
+          "Ilg‘or hisobotlar",
+          "Ishlash ko‘rsatkichlari",
+          "Prognozli tahlillar",
+          "Moslashtirilgan boshqaruv panellari"
+        ]
+      },
+      {
+        "title": "Omborxona",
+        "description": "Ombor joylashuvi, ish jarayonlarini optimallashtirish va xavfsizlikni ta’minlash.",
+        "features": [
+          "Joylashuvni optimallashtirish",
+          "Ish jarayonlarini yaxshilash",
+          "Bo‘sh joydan unumli foydalanish",
+          "Xavfsizlik standartlariga rioya qilish"
+        ]
+      },
+      {
+        "title": "Avtomatlashtirish",
+        "description": "Ombor ish jarayonlarini avtomatlashtirish orqali samaradorlikni oshiring.",
+        "features": [
+          "Avtomatik saralash tizimlari",
+          "Robototexnika tizimlari",
+          "AI asosida optimallashtirish",
+          "Tizimlar bilan integratsiya imkoniyati"
+        ]
+      }
+    ]
   }
 }

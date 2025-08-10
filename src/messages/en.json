@@ -6,6 +6,15 @@
     "services": "Services",
     "project": "Project"
   },
+    "contact": {
+    "heroTitle": "Contact Us",
+    "heroSubtitle": "Get in touch with us for any questions or suggestions",
+    "contactInfo": "Contact Information",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "viewOnMap": "View our location on the map"
+  },
   "home": {
     "hero": {
       "title": "Professional Warehouse Inventory Management",
@@ -13,11 +22,11 @@
       "startButton": "Get Started"
     }
   },
-    "servicesPage": {
-      "badge": "Our services",
-      "title2":"our services",
-      "title": "Our",
-      "description": "A complete set of solutions to grow your business. Each service is tailored to your needs.",
+  "servicesPage": {
+    "badge": "Our services",
+    "title2": "our services",
+    "title": "Our",
+    "description": "A complete set of solutions to grow your business. Each service is tailored to your needs.",
     "services": [
       {
         "icon": "Package",
@@ -104,23 +113,23 @@
         "popular": false
       }
     ],
-      "title3": "Why you should choose our services?",
-      "description2": "Our services are designed to take your business to the next level",
-          "title4": "Reliable",
-          "description3": "99.9% reliability and security guarantee",
-          "title5": "24/7 Support",
-          "description4": "Always at your service",
-          "title6": "Efficiency",
-          "description5": "Accelerate business processes by 5x",
-      "title7": "Try our services!",
-      "description6": "Contact us to get a free consultation and choose a solution that fits your needs",
-      "freeConsultation": "Free Consultation",
-      "allServices": "All Services",
-      "details": "Details",
-      "popular": "Popular",
-      "title12": "Companies that trust us"
+    "title3": "Why you should choose our services?",
+    "description2": "Our services are designed to take your business to the next level",
+    "title4": "Reliable",
+    "description3": "99.9% reliability and security guarantee",
+    "title5": "24/7 Support",
+    "description4": "Always at your service",
+    "title6": "Efficiency",
+    "description5": "Accelerate business processes by 5x",
+    "title7": "Try our services!",
+    "description6": "Contact us to get a free consultation and choose a solution that fits your needs",
+    "freeConsultation": "Free Consultation",
+    "allServices": "All Services",
+    "details": "Details",
+    "popular": "Popular",
+    "title12": "Companies that trust us"
   },
-"footer": {
+  "footer": {
     "company": {
       "name": "Warehouse Systems",
       "tagline": "Consulting",
@@ -140,10 +149,22 @@
     },
     "services": {
       "title": "Services",
-      "link1": { "name": "Inventory Management", "href": "https://t.me/makhmudovmee" },
-      "link2": { "name": "Analysis and Reports", "href": "https://t.me/makhmudovmee" },
-      "link3": { "name": "Warehouse Optimization", "href": "https://t.me/makhmudovmee" },
-      "link4": { "name": "Automated Systems", "href": "https://t.me/makhmudovmee" }
+      "link1": {
+        "name": "Inventory Management",
+        "href": "https://t.me/makhmudovmee"
+      },
+      "link2": {
+        "name": "Analysis and Reports",
+        "href": "https://t.me/makhmudovmee"
+      },
+      "link3": {
+        "name": "Warehouse Optimization",
+        "href": "https://t.me/makhmudovmee"
+      },
+      "link4": {
+        "name": "Automated Systems",
+        "href": "https://t.me/makhmudovmee"
+      }
     },
     "connect": {
       "title": "Connect",
@@ -159,5 +180,190 @@
       "terms": "Terms of Use",
       "cookies": "Cookie Policy"
     }
+  },
+  "about": {
+    "hero": {
+      "title": "About Our Company",
+      "description": "We are a leading warehouse inventory management company with years of experience optimizing storage and logistics operations."
+    },
+    "missionVision": {
+      "mission": {
+        "title": "Our Mission",
+        "text": "To provide innovative inventory management solutions that help businesses optimize warehouse operations and reduce costs."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "text": "To be a global leader in warehouse inventory management technologies and services."
+      }
+    },
+    "stats": {
+      "customers": "Customers",
+      "experience": "Years of Experience",
+      "projects": "Projects",
+      "support": "Support"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "News and articles",
+      "description": "Latest news in warehouse management, inventory, and logistics"
+    },
+    "featuredTitle": "Featured News",
+    "allTitle": "All News",
+    "readMore": "Read More",
+    "articles": [
+      {
+        "id": 1,
+        "title": "Warehouse management updated",
+        "excerpt": "With our new system, efficiency has increased.",
+        "content": "The full text of the article will be here...",
+        "date": "2025-08-01",
+        "author": "Admin",
+        "category": "Technology",
+        "readTime": "5 min",
+        "featured": true
+      },
+      {
+        "id": 2,
+        "title": "New contract with partner",
+        "excerpt": "A contract has been signed with an international company.",
+        "content": "The full text of the article will be here...",
+        "date": "2025-07-20",
+        "author": "Admin",
+        "category": "Business",
+        "readTime": "3 min",
+        "featured": true
+      },
+            {
+        "id": 3,
+        "title": "New contract with partner",
+        "excerpt": "A contract has been signed with an international company.",
+        "content": "The full text of the article will be here...",
+        "date": "2025-07-20",
+        "author": "Admin",
+        "category": "Business",
+        "readTime": "3 min",
+        "featured": false
+      },
+                  {
+        "id": 4,
+        "title": "New contract with partner",
+        "excerpt": "A contract has been signed with an international company.",
+        "content": "The full text of the article will be here...",
+        "date": "2025-07-20",
+        "author": "Admin",
+        "category": "Business",
+        "readTime": "3 min",
+        "featured": false
+      }
+    ]
+  },
+  "portfolio": {
+    "hero": {
+      "title": "Our Projects",
+      "subtitle": "Successfully completed inventory and audit projects across various industries"
+    },
+    "stats": {
+      "projects": "Successful Projects",
+      "warehouses": "Warehouses Inventoried",
+      "items": "Items Counted",
+      "accuracy": "Average Accuracy Rate"
+    },
+    "recentProjects": {
+      "title": "Our Recent Projects",
+      "subtitle": "Each project reflects our professional approach and high-quality service capabilities"
+    },
+    "projects": [
+      {
+        "title": "Inventory for a large trading company",
+        "client": "ABC Distribution",
+        "category": "Trade",
+        "description": "Full inventory in a 15,000 m² warehouse and process optimization",
+        "results": ["99.8% accuracy", "30% time savings", "Costs reduced by 25%"]
+      },
+      {
+        "title": "Food products audit",
+        "client": "Food Market Chain",
+        "category": "Food",
+        "description": "Inventory and safety audit in 7 stores and warehouses",
+        "results": ["100% report accuracy", "Compliance with HACCP standards", "Losses reduced by 40%"]
+      },
+      {
+        "title": "Pharmaceutical company audit",
+        "client": "PharmaCorp",
+        "category": "Pharmaceutical",
+        "description": "Auditing medicine warehouses and ensuring compliance with GMP standards",
+        "results": ["GMP certificate obtained", "Losses reduced to 0.1%", "Efficiency increased by 50%"]
+      },
+      {
+        "title": "Textile company inventory",
+        "client": "Textile Industries",
+        "category": "Textile",
+        "description": "Inventory of fabrics and finished goods in a 10,000 m² warehouse",
+        "results": ["95% accuracy", "Processes accelerated by 20%", "Costs reduced by 15%"]
+      },
+      {
+        "title": "Car parts warehouse audit",
+        "client": "Auto Parts Ltd",
+        "category": "Automotive",
+        "description": "Full audit and cataloging of car parts in warehouse",
+        "results": ["50,000+ products cataloged", "Search system improved by 70%", "Losses reduced by 35%"]
+      },
+      {
+        "title": "Electronics store inventory",
+        "client": "Tech Store Network",
+        "category": "Electronics",
+        "description": "Inventory and pricing system optimization in 12 electronics stores",
+        "results": ["Real-time inventory", "Prices 100% accurate", "Sales increased by 25%"]
+      }
+    ]
+  },
+  "services": {
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "Professional warehouse management solutions tailored to your business needs"
+    },
+    "list": [
+      {
+        "title": "Inventory",
+        "description": "A system for real-time monitoring and management of your stock.",
+        "features": [
+          "Real-time inventory monitoring",
+          "Automatic low-stock alerts",
+          "Barcode scanning",
+          "Multi-branch support"
+        ]
+      },
+      {
+        "title": "Analytics",
+        "description": "In-depth analytics and reports to evaluate warehouse performance.",
+        "features": [
+          "Advanced reports",
+          "Performance metrics",
+          "Predictive analytics",
+          "Customizable dashboards"
+        ]
+      },
+      {
+        "title": "Warehouse",
+        "description": "Optimize warehouse layout, workflows, and ensure safety.",
+        "features": [
+          "Layout optimization",
+          "Workflow improvement",
+          "Efficient space utilization",
+          "Compliance with safety standards"
+        ]
+      },
+      {
+        "title": "Automation",
+        "description": "Increase efficiency through warehouse process automation.",
+        "features": [
+          "Automated sorting systems",
+          "Robotics systems",
+          "AI-based optimization",
+          "Integration capabilities"
+        ]
+      }
+    ]
   }
 }

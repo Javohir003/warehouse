@@ -1,7 +1,12 @@
+'use client';
+
 import { Phone, Mail, MapPin } from 'lucide-react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export default function ContactPage() {
+  const t = useTranslations('contact');
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -9,10 +14,10 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
-              Biz bilan bog&apos;lanish
+              {t('heroTitle')}
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-green-100 max-w-3xl mx-auto">
-              Har qanday savol va takliflaringiz uchun biz bilan bog&apos;laning
+              {t('heroSubtitle')}
             </p>
           </div>
         </div>
@@ -22,14 +27,14 @@ export default function ContactPage() {
       <section className="py-12 sm:py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 text-center sm:text-left">
-            Aloqa ma&apos;lumotlari
+            {t('contactInfo')}
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 justify-items-center">
             <div className="flex items-start w-full max-w-xs">
               <Phone className="h-6 w-6 text-green-600 mr-3 sm:mr-4 mt-1 flex-shrink-0" />
               <div>
-                <h3 className="text-base sm:text-lg font-semibold text-gray-900">Telefon</h3>
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900">{t('phone')}</h3>
                 <Link href="tel:+998711234567" className="text-green-600 hover:underline">
                   +998 (71) 123-45-67
                 </Link>
@@ -39,9 +44,8 @@ export default function ContactPage() {
             <div className="flex items-start w-full max-w-xs">
               <Mail className="h-6 w-6 text-green-600 mr-3 sm:mr-4 mt-1 flex-shrink-0" />
               <div>
-                
-                <h3 className="text-base sm:text-lg font-semibold text-gray-900">Email</h3>
-                <Link href="emailto:info@audit-sklad.uz" className="text-green-600 hover:underline">
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900">{t('email')}</h3>
+                <Link href="mailto:info@audit-sklad.uz" className="text-green-600 hover:underline">
                   info@audit-sklad.uz
                 </Link>
               </div>
@@ -50,9 +54,12 @@ export default function ContactPage() {
             <div className="flex items-start w-full max-w-xs">
               <MapPin className="h-6 w-6 text-green-600 mr-3 sm:mr-4 mt-1 flex-shrink-0" />
               <div>
-                <h3 className="text-base sm:text-lg font-semibold text-gray-900">Manzil</h3>
-                <Link href="https://www.google.com/maps/place/Amir+Temur+Avenue,+Tashkent,+Uzbekistan" className="text-green-600 hover:underline">
-                  Manzilimizni xaritada ko&apos;ring
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900">{t('address')}</h3>
+                <Link
+                  href="https://www.google.com/maps/place/Amir+Temur+Avenue,+Tashkent,+Uzbekistan"
+                  className="text-green-600 hover:underline"
+                >
+                  {t('viewOnMap')}
                 </Link>
               </div>
             </div>
