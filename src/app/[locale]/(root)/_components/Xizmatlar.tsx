@@ -3,12 +3,20 @@ import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import { useTranslations } from "next-intl";
 
+interface Service {
+  color: string;
+  popular?: boolean;
+  title: string;
+  description: string;
+  features: string[];
+  benefits: string[];
+}
 
 export default function XizmatlarPage() {
-    const t = useTranslations("servicesPage");
+  const t = useTranslations("servicesPage");
 
-    const services = t.raw("services") ;
-
+  // services ni Service[] tipida e'lon qilamiz
+  const services: Service[] = t.raw("services") as Service[];
 
   const getColorClasses = (color: string) => {
     const colors = {
@@ -70,7 +78,7 @@ export default function XizmatlarPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {services.map((service, index) => {
             const colorClasses = getColorClasses(service.color)
-            
+
             return (
               <Card key={index} className={`relative group hover:shadow-2xl transition-all duration-300 border-2 ${colorClasses.border} ${colorClasses.hover} ${colorClasses.bg}`}>
                 {service.popular && (
@@ -78,7 +86,7 @@ export default function XizmatlarPage() {
                     Mashhur
                   </div>
                 )}
-                
+
                 <CardContent className="p-6">
                   <div className="text-center">
                     {/* Content */}
@@ -116,10 +124,10 @@ export default function XizmatlarPage() {
                         </ul>
                       </div>
                       <Link href="/services">
-                      <button className={`w-full bg-gradient-to-r ${colorClasses.gradient} text-white px-4 py-2 rounded-lg font-medium hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 group text-sm`}>
-                        Batafsil
-                        <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-300" />
-                      </button>
+                        <button className={`w-full bg-gradient-to-r ${colorClasses.gradient} text-white px-4 py-2 rounded-lg font-medium hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 group text-sm`}>
+                          Batafsil
+                          <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-300" />
+                        </button>
                       </Link>
                     </div>
                   </div>
