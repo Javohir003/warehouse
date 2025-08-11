@@ -73,11 +73,6 @@ export default function NewsPage() {
 
                   <h3 className="text-xl font-bold text-gray-900 mb-4">{article.title}</h3>
                   <p className="text-gray-600 mb-6">{article.excerpt}</p>
-
-                  <button className="flex items-center text-emerald-600 font-semibold hover:text-emerald-700 transition-colors duration-300">
-                    {t('readMore')}
-                    <ArrowRight className="h-4 w-4 ml-2" />
-                  </button>
                 </div>
               </div>
             ))}

@@ -4,7 +4,8 @@
     "contact": "Bog'lanish",
     "news": "Yangiliklar",
     "services": "Xizmatlar",
-    "project": "Loyihalar"
+    "project": "Loyihalar",
+    "chooseLanguage": "Til tanlang:"
   },
   "home": {
     "hero": {
@@ -210,7 +211,6 @@
     },
     "featuredTitle": "Asosiy yangiliklar",
     "allTitle": "Barcha yangiliklar",
-    "readMore": "Batafsil o'qish",
     "articles": [
       {
         "id": 1,

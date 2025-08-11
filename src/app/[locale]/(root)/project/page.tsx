@@ -3,6 +3,13 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
+import project1 from "../../../../../public/imgs/project1.jpg";
+import project2 from "../../../../../public/imgs/project2.jpg";
+import project3 from "../../../../../public/imgs/project3.jpeg";
+import project4 from "../../../../../public/imgs/project4.png";
+import project5 from "../../../../../public/imgs/project5.jpg";
+import project6 from "../../../../../public/imgs/project6.webp";
+
 export default function PortfolioPage() {
   const t = useTranslations("portfolio");
 
@@ -20,6 +27,9 @@ export default function PortfolioPage() {
     description: string;
     results: string[];
   }[];
+
+  // Rasmlar massivini yaratamiz
+  const projectImages = [project1, project2, project3, project4, project5, project6];
 
   return (
     <div className="bg-white">
@@ -64,7 +74,7 @@ export default function PortfolioPage() {
                 className="bg-white rounded-lg shadow-md overflow-hidden"
               >
                 <Image
-                  src={`/images/projects/${index + 1}.jpg`}
+                  src={projectImages[index]}
                   alt={project.title}
                   width={400}
                   height={250}

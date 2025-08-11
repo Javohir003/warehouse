@@ -19,7 +19,9 @@ module.exports = {
   		}
   	},
   	extend: {
-  		screens: {},
+  		screens: {
+			xxxl: "350px"
+		},
   		fontFamily: {
   			vela: [
   				'Vela Sans',
