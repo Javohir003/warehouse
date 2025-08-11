@@ -1,11 +1,12 @@
 'use client'
 
 import { Phone, Mail, MapPin, Instagram, Youtube } from 'lucide-react'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import Link from 'next/link'
 
 export default function FooterPage() {
-  const t = useTranslations('footer')
+  const t = useTranslations('footer');
+  const locale = useLocale()
 
   return (
     <footer className="bg-gray-900 text-white relative">
@@ -55,22 +56,22 @@ export default function FooterPage() {
             <h4 className="text-lg font-semibold mb-6">{t('nav.title')}</h4>
             <ul className="space-y-3">
               <li>
-                <Link href={t('nav.link1.href')} className="text-gray-400 hover:text-white transition-colors duration-300 text-sm flex items-center gap-2 group">
+                <Link href={`/${locale}/about`} className="text-gray-400 hover:text-white transition-colors duration-300 text-sm flex items-center gap-2 group">
                   {t('nav.link1.name')}
                 </Link>
               </li>
               <li>
-                <Link href={t('nav.link2.href')} className="text-gray-400 hover:text-white transition-colors duration-300 text-sm flex items-center gap-2 group">
+                <Link href={`/${locale}/services`} className="text-gray-400 hover:text-white transition-colors duration-300 text-sm flex items-center gap-2 group">
                   {t('nav.link2.name')}
                 </Link>
               </li>
               <li>
-                <Link href={t('nav.link3.href')} className="text-gray-400 hover:text-white transition-colors duration-300 text-sm flex items-center gap-2 group">
+                <Link href={`/${locale}/news`} className="text-gray-400 hover:text-white transition-colors duration-300 text-sm flex items-center gap-2 group">
                   {t('nav.link3.name')}
                 </Link>
               </li>
               <li>
-                <Link href={t('nav.link4.href')} className="text-gray-400 hover:text-white transition-colors duration-300 text-sm flex items-center gap-2 group">
+                <Link href={`/${locale}/contact`} className="text-gray-400 hover:text-white transition-colors duration-300 text-sm flex items-center gap-2 group">
                   {t('nav.link4.name')}
                 </Link>
               </li>

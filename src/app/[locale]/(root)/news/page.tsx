@@ -1,5 +1,5 @@
 
-import { Calendar, User, ArrowRight, Clock } from 'lucide-react';
+import { Calendar, User, Clock } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 type ArticleType = {

@@ -1,7 +1,7 @@
 import { Settings, ArrowRight, CheckCircle, TrendingUp, Shield, Clock } from 'lucide-react'
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 interface Service {
   color: string;
@@ -10,6 +10,9 @@ interface Service {
   description: string;
   features: string[];
   benefits: string[];
+  featuresTitle: string
+  benefitsTitle: string
+
 }
 
 export default function XizmatlarPage() {
@@ -17,6 +20,7 @@ export default function XizmatlarPage() {
 
   // services ni Service[] tipida e'lon qilamiz
   const services: Service[] = t.raw("services") as Service[];
+  const locale = useLocale()
 
   const getColorClasses = (color: string) => {
     const colors = {
@@ -83,7 +87,7 @@ export default function XizmatlarPage() {
               <Card key={index} className={`relative group hover:shadow-2xl transition-all duration-300 border-2 ${colorClasses.border} ${colorClasses.hover} ${colorClasses.bg}`}>
                 {service.popular && (
                   <div className="absolute -top-2 left-4 bg-gradient-to-r from-green-500 to-green-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    Mashhur
+                    {t("popular")}
                   </div>
                 )}
 
@@ -100,7 +104,7 @@ export default function XizmatlarPage() {
 
                       {/* Features */}
                       <div className="mb-4">
-                        <h4 className="font-semibold text-gray-900 mb-2 text-sm">Xususiyatlar:</h4>
+                        <h4 className="font-semibold text-gray-900 mb-2 text-sm">{service.featuresTitle}</h4>
                         <ul className="space-y-1">
                           {service.features.slice(0, 3).map((feature, featureIndex) => (
                             <li key={featureIndex} className="flex items-start gap-2 text-xs text-gray-600">
@@ -113,7 +117,7 @@ export default function XizmatlarPage() {
 
                       {/* Benefits */}
                       <div className="mb-4">
-                        <h4 className="font-semibold text-gray-900 mb-2 text-sm">Afzalliklar:</h4>
+                        <h4 className="font-semibold text-gray-900 mb-2 text-sm">{service.benefitsTitle}</h4>
                         <ul className="space-y-1">
                           {service.benefits.slice(0, 2).map((benefit, benefitIndex) => (
                             <li key={benefitIndex} className="flex items-start gap-2 text-xs text-gray-600">
@@ -123,9 +127,9 @@ export default function XizmatlarPage() {
                           ))}
                         </ul>
                       </div>
-                      <Link href="/services">
+                      <Link href={`/${locale}/services`}>
                         <button className={`w-full bg-gradient-to-r ${colorClasses.gradient} text-white px-4 py-2 rounded-lg font-medium hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 group text-sm`}>
-                          Batafsil
+                          {t("details")}
                           <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-300" />
                         </button>
                       </Link>
@@ -183,13 +187,13 @@ export default function XizmatlarPage() {
               {t("description6")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
+              <Link href={`/${locale}/contact`}>
                 <button className="bg-white w-full text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300 flex items-center justify-center gap-2">
                   {t("freeConsultation")}
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </Link>
-              <Link href="/services">
+              <Link href={`/${locale}/services`}>
                 <button className="border-2 w-full border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-300">
                   {t("allServices")}
                 </button>

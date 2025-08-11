@@ -2,10 +2,11 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import XizmatlarPage from "./_components/Xizmatlar";
 import ClientLogos from "./_components/ClientPage";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Home() {
   const t = useTranslations("home.hero");
+  const locale = useLocale()
 
   return (
     <div>
@@ -28,7 +29,7 @@ export default function Home() {
               {t("subtitle")}
             </p>
             <Link
-              href={`/contact`}
+              href={`/${locale}/contact`}
               className="inline-flex items-center bg-white text-orange-500 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               {t("startButton")}
